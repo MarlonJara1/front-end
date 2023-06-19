@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>Listar Usuarios</title>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>
+                        Dirección
+                    </th>
+                    <th>
+                        Latitud
+                    </th>
+                    <th>
+                        Longitud
+                    </th>
+                    <th>
+                        Fecha
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="contenido">
+                
+            </tbody>
+        </table>
+        `<a href="crear.html" class="btn modal-trigger green">Crear</a>`
+
+    </div>
+
+    
+
+
+    <div class="section container col s3">
+        <div id="idModal" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <form class="form_main col s6" action="">
+                        <p class="heading">Editar</p>
+                        <input type="hidden" id="_id">
+
+                            <div class="input-field">
+                                <input id="_id" type="hidden" class="validate">
+                        <div class="input-field col s6 center-align">
+                            <input id="direccion" placeholder="Dirección" class="validate" type="text" required>
+                        </div>
+                        <div class="input-field col s6 center-align">
+                            <input id="latitud" placeholder="Latitud" step="any"  class="validate" type="text">
+                        </div>
+                        <div class="input-field col s6 center-align">
+                            <input id="longitud" step="any" placeholder="Longitud"  class="validate" type="text">
+                        </div>
+                        <div class="input-field col s6 center-align">
+                            <input id="descripcion" step="any" placeholder="Descripción" class="validate" type="text">
+                        </div>
+                        <button id="btnActualizar" class="btn waves-effect waves-light" type="button" name="action">Editar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn modal-close black">Cerrar</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    <script src="js/funciones.js"></script>
+
+</body>
+</html>

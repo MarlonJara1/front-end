@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Formulario</title>
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Crear</span>
+                <form>
+                    <div class="input-field">
+                        <input id="direccion" type="text" class="validate" required>
+                        <label for="direccion">Dirección</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="latitud" type="text" class="validate" required>
+                        <label for="latitud">Latitud</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="longitud" type="text" class="validate" required>
+                        <label for="longitud">Longitud</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="descripcion" type="text" class="validate" required>
+                        <label for="descripcion">Descripción</label>
+                    </div>
+                    <button id="btnRegistrar" class="btn waves-effect waves-light" type="button" >Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
